@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'io.github.pinnsvin'
+version '0.1'
+
+sourceCompatibility = 13
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile(project(':parent')){
+        // 开启依赖传递
+        transitive(true)
+    }
+}
