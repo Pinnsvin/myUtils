@@ -13,6 +13,9 @@ repositories {
 }
 
 dependencies {
-    compile project(':common')
+    compile(project(':common')){
+        // 开启依赖传递
+        transitive(true)
+    }
 
 }

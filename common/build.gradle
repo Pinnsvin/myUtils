@@ -13,8 +13,5 @@ repositories {
 }
 
 dependencies {
-    compile(project(':parent')){
-        // 开启依赖传递
-        transitive(true)
-    }
+
 }
